@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0984368027217328005BCCB3 /* PaymentsListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984367F27217328005BCCB3 /* PaymentsListApp.swift */; };
+		0984368227217328005BCCB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984368127217328005BCCB3 /* ContentView.swift */; };
+		098436842721732B005BCCB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098436832721732B005BCCB3 /* Assets.xcassets */; };
+		098436872721732B005BCCB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098436862721732B005BCCB3 /* Preview Assets.xcassets */; };
+		098436922721732B005BCCB3 /* PaymentsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098436912721732B005BCCB3 /* PaymentsListTests.swift */; };
+		0984369D2721732B005BCCB3 /* PaymentsListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984369C2721732B005BCCB3 /* PaymentsListUITests.swift */; };
+		098436B1272174B7005BCCB3 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098436B0272174B7005BCCB3 /* UserViewModel.swift */; };
+		098436B9272177B2005BCCB3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098436B8272177B2005BCCB3 /* LoginView.swift */; };
+		098436BE27218EEF005BCCB3 /* PaymentsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098436BD27218EEF005BCCB3 /* PaymentsStore.swift */; };
+		098436C327219D7F005BCCB3 /* StoreAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098436C227219D7F005BCCB3 /* StoreAPIError.swift */; };
+		098436C82721A7C3005BCCB3 /* PaymentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098436C72721A7C3005BCCB3 /* PaymentsListView.swift */; };
+		098436CD2721A92E005BCCB3 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098436CC2721A92E005BCCB3 /* Payment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0984368E2721732B005BCCB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0984367427217328005BCCB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0984367B27217328005BCCB3;
+			remoteInfo = PaymentsList;
+		};
+		098436992721732B005BCCB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0984367427217328005BCCB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0984367B27217328005BCCB3;
+			remoteInfo = PaymentsList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0984367C27217328005BCCB3 /* PaymentsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0984367F27217328005BCCB3 /* PaymentsListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsListApp.swift; sourceTree = "<group>"; };
+		0984368127217328005BCCB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		098436832721732B005BCCB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		098436862721732B005BCCB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		098436882721732B005BCCB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0984368D2721732B005BCCB3 /* PaymentsListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentsListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		098436912721732B005BCCB3 /* PaymentsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsListTests.swift; sourceTree = "<group>"; };
+		098436932721732B005BCCB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098436982721732B005BCCB3 /* PaymentsListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentsListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0984369C2721732B005BCCB3 /* PaymentsListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsListUITests.swift; sourceTree = "<group>"; };
+		0984369E2721732B005BCCB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098436B0272174B7005BCCB3 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		098436B8272177B2005BCCB3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		098436BD27218EEF005BCCB3 /* PaymentsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsStore.swift; sourceTree = "<group>"; };
+		098436C227219D7F005BCCB3 /* StoreAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAPIError.swift; sourceTree = "<group>"; };
+		098436C72721A7C3005BCCB3 /* PaymentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsListView.swift; sourceTree = "<group>"; };
+		098436CC2721A92E005BCCB3 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0984367927217328005BCCB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0984368A2721732B005BCCB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098436952721732B005BCCB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0984367327217328005BCCB3 = {
+			isa = PBXGroup;
+			children = (
+				0984367E27217328005BCCB3 /* PaymentsList */,
+				098436902721732B005BCCB3 /* PaymentsListTests */,
+				0984369B2721732B005BCCB3 /* PaymentsListUITests */,
+				0984367D27217328005BCCB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0984367D27217328005BCCB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0984367C27217328005BCCB3 /* PaymentsList.app */,
+				0984368D2721732B005BCCB3 /* PaymentsListTests.xctest */,
+				098436982721732B005BCCB3 /* PaymentsListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0984367E27217328005BCCB3 /* PaymentsList */ = {
+			isa = PBXGroup;
+			children = (
+				098436AF27217351005BCCB3 /* View */,
+				098436AE27217347005BCCB3 /* Model */,
+				098436AD27217339005BCCB3 /* Services */,
+				0984367F27217328005BCCB3 /* PaymentsListApp.swift */,
+				0984368127217328005BCCB3 /* ContentView.swift */,
+				098436832721732B005BCCB3 /* Assets.xcassets */,
+				098436882721732B005BCCB3 /* Info.plist */,
+				098436852721732B005BCCB3 /* Preview Content */,
+			);
+			path = PaymentsList;
+			sourceTree = "<group>";
+		};
+		098436852721732B005BCCB3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				098436862721732B005BCCB3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		098436902721732B005BCCB3 /* PaymentsListTests */ = {
+			isa = PBXGroup;
+			children = (
+				098436912721732B005BCCB3 /* PaymentsListTests.swift */,
+				098436932721732B005BCCB3 /* Info.plist */,
+			);
+			path = PaymentsListTests;
+			sourceTree = "<group>";
+		};
+		0984369B2721732B005BCCB3 /* PaymentsListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0984369C2721732B005BCCB3 /* PaymentsListUITests.swift */,
+				0984369E2721732B005BCCB3 /* Info.plist */,
+			);
+			path = PaymentsListUITests;
+			sourceTree = "<group>";
+		};
+		098436AD27217339005BCCB3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				098436BD27218EEF005BCCB3 /* PaymentsStore.swift */,
+				098436C227219D7F005BCCB3 /* StoreAPIError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		098436AE27217347005BCCB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				098436B0272174B7005BCCB3 /* UserViewModel.swift */,
+				098436CC2721A92E005BCCB3 /* Payment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		098436AF27217351005BCCB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				098436B8272177B2005BCCB3 /* LoginView.swift */,
+				098436C72721A7C3005BCCB3 /* PaymentsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0984367B27217328005BCCB3 /* PaymentsList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 098436A12721732B005BCCB3 /* Build configuration list for PBXNativeTarget "PaymentsList" */;
+			buildPhases = (
+				0984367827217328005BCCB3 /* Sources */,
+				0984367927217328005BCCB3 /* Frameworks */,
+				0984367A27217328005BCCB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaymentsList;
+			productName = PaymentsList;
+			productReference = 0984367C27217328005BCCB3 /* PaymentsList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0984368C2721732B005BCCB3 /* PaymentsListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 098436A42721732B005BCCB3 /* Build configuration list for PBXNativeTarget "PaymentsListTests" */;
+			buildPhases = (
+				098436892721732B005BCCB3 /* Sources */,
+				0984368A2721732B005BCCB3 /* Frameworks */,
+				0984368B2721732B005BCCB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0984368F2721732B005BCCB3 /* PBXTargetDependency */,
+			);
+			name = PaymentsListTests;
+			productName = PaymentsListTests;
+			productReference = 0984368D2721732B005BCCB3 /* PaymentsListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		098436972721732B005BCCB3 /* PaymentsListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 098436A72721732B005BCCB3 /* Build configuration list for PBXNativeTarget "PaymentsListUITests" */;
+			buildPhases = (
+				098436942721732B005BCCB3 /* Sources */,
+				098436952721732B005BCCB3 /* Frameworks */,
+				098436962721732B005BCCB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0984369A2721732B005BCCB3 /* PBXTargetDependency */,
+			);
+			name = PaymentsListUITests;
+			productName = PaymentsListUITests;
+			productReference = 098436982721732B005BCCB3 /* PaymentsListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0984367427217328005BCCB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					0984367B27217328005BCCB3 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0984368C2721732B005BCCB3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0984367B27217328005BCCB3;
+					};
+					098436972721732B005BCCB3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0984367B27217328005BCCB3;
+					};
+				};
+			};
+			buildConfigurationList = 0984367727217328005BCCB3 /* Build configuration list for PBXProject "PaymentsList" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0984367327217328005BCCB3;
+			productRefGroup = 0984367D27217328005BCCB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0984367B27217328005BCCB3 /* PaymentsList */,
+				0984368C2721732B005BCCB3 /* PaymentsListTests */,
+				098436972721732B005BCCB3 /* PaymentsListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0984367A27217328005BCCB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098436872721732B005BCCB3 /* Preview Assets.xcassets in Resources */,
+				098436842721732B005BCCB3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0984368B2721732B005BCCB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098436962721732B005BCCB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0984367827217328005BCCB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0984368227217328005BCCB3 /* ContentView.swift in Sources */,
+				098436B1272174B7005BCCB3 /* UserViewModel.swift in Sources */,
+				098436B9272177B2005BCCB3 /* LoginView.swift in Sources */,
+				098436C82721A7C3005BCCB3 /* PaymentsListView.swift in Sources */,
+				098436C327219D7F005BCCB3 /* StoreAPIError.swift in Sources */,
+				0984368027217328005BCCB3 /* PaymentsListApp.swift in Sources */,
+				098436CD2721A92E005BCCB3 /* Payment.swift in Sources */,
+				098436BE27218EEF005BCCB3 /* PaymentsStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098436892721732B005BCCB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098436922721732B005BCCB3 /* PaymentsListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098436942721732B005BCCB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0984369D2721732B005BCCB3 /* PaymentsListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0984368F2721732B005BCCB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0984367B27217328005BCCB3 /* PaymentsList */;
+			targetProxy = 0984368E2721732B005BCCB3 /* PBXContainerItemProxy */;
+		};
+		0984369A2721732B005BCCB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0984367B27217328005BCCB3 /* PaymentsList */;
+			targetProxy = 098436992721732B005BCCB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0984369F2721732B005BCCB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		098436A02721732B005BCCB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		098436A22721732B005BCCB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PaymentsList/Preview Content\"";
+				DEVELOPMENT_TEAM = 88238J5794;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PaymentsList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.BondarSoft.PaymentsList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		098436A32721732B005BCCB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PaymentsList/Preview Content\"";
+				DEVELOPMENT_TEAM = 88238J5794;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PaymentsList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.BondarSoft.PaymentsList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		098436A52721732B005BCCB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88238J5794;
+				INFOPLIST_FILE = PaymentsListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.BondarSoft.PaymentsListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentsList.app/PaymentsList";
+			};
+			name = Debug;
+		};
+		098436A62721732B005BCCB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88238J5794;
+				INFOPLIST_FILE = PaymentsListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.BondarSoft.PaymentsListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentsList.app/PaymentsList";
+			};
+			name = Release;
+		};
+		098436A82721732B005BCCB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88238J5794;
+				INFOPLIST_FILE = PaymentsListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.BondarSoft.PaymentsListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaymentsList;
+			};
+			name = Debug;
+		};
+		098436A92721732B005BCCB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88238J5794;
+				INFOPLIST_FILE = PaymentsListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.BondarSoft.PaymentsListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaymentsList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0984367727217328005BCCB3 /* Build configuration list for PBXProject "PaymentsList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0984369F2721732B005BCCB3 /* Debug */,
+				098436A02721732B005BCCB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		098436A12721732B005BCCB3 /* Build configuration list for PBXNativeTarget "PaymentsList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098436A22721732B005BCCB3 /* Debug */,
+				098436A32721732B005BCCB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		098436A42721732B005BCCB3 /* Build configuration list for PBXNativeTarget "PaymentsListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098436A52721732B005BCCB3 /* Debug */,
+				098436A62721732B005BCCB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		098436A72721732B005BCCB3 /* Build configuration list for PBXNativeTarget "PaymentsListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098436A82721732B005BCCB3 /* Debug */,
+				098436A92721732B005BCCB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0984367427217328005BCCB3 /* Project object */;
+}
