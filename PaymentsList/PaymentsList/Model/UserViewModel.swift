@@ -14,10 +14,10 @@ final class UserViewModel: ObservableObject {
     // input
     @Published var username = ""
     @Published var password = ""
-    @Published var token: String?
 
     // output
     @Published var isValid = false
+    @Published var token: String?
     @Published var payments = [Payment]()
     @Published var paymentsError: StoreAPIError?
 
@@ -76,6 +76,20 @@ final class UserViewModel: ObservableObject {
     }
 
     func login(showList: ()) {
+        self.paymentAPI.login(username: self.username, password: self.password)
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: {[unowned self](completion) in
+                if case let .failure(error) = completion {
+                    self.paymentsError = error
+                }
+                self.fetchPayments()
+            }, receiveValue: {[unowned self] in
+                self.token = $0
+            })
+            .store(in: &self.cancellableSet)
+    }
+    
+    func loginOld(showList: ()) {
         guard let request = paymentAPI.loginRequest(username: self.username, password: self.password) else {
             return
         }

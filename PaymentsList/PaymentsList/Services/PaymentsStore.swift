@@ -99,6 +99,46 @@ public class PaymentsStore {
         request.addValue("12345", forHTTPHeaderField: "app-key")
         request.addValue("1", forHTTPHeaderField: "v")
         request.httpMethod = "POST"
+        dump(request)
         return request
+    }
+
+    func login(username: String, password: String) -> Future<String, StoreAPIError> {
+        return Future<String, StoreAPIError> {[unowned self] promise in
+            guard let request = self.loginRequest(username: username, password: password) else {
+                return promise(.failure(.urlError(URLError(URLError.unsupportedURL))))
+            }
+            
+            self.urlSession.dataTaskPublisher(for: request)
+                .tryMap { (data, response) -> Data in
+                    guard let httpResponse = response as? HTTPURLResponse,
+                          200...299 ~= httpResponse.statusCode else {
+                        throw StoreAPIError.responseError(
+                            (response as? HTTPURLResponse)?.statusCode ?? 500)
+                    }
+                    return data
+            }
+            .decode(type: LoginResult.self, decoder: self.jsonDecoder)
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { completion in
+                if case let .failure(error) = completion {
+                    switch error {
+                    case let urlError as URLError:
+                        promise(.failure(.urlError(urlError)))
+                    case let decodingError as DecodingError:
+                        promise(.failure(.decodingError(decodingError)))
+                    case let apiError as StoreAPIError:
+                        promise(.failure(apiError))
+                    default:
+                        promise(.failure(.genericError))
+                    }
+                }
+            }, receiveValue: {
+                let token = $0.response.token
+                promise(.success(token))
+                dump($0.response)
+            })
+            .store(in: &self.subscriptions)
+        }
     }
 }
