@@ -116,6 +116,12 @@ final class UserViewModel: ObservableObject {
             dataTask.resume()
         }
     }
+    
+    deinit {
+        for cancell in cancellableSet {
+            cancell.cancel()
+        }
+    }
 }
 
 struct LoginResult: Codable {
