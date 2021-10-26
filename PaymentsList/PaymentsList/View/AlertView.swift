@@ -15,7 +15,7 @@ struct AlertView: View {
         Button(action: {
             clickButton()
         }, label: {
-            Text("Click Alert")
+            Text("Ok")
                 .foregroundColor(Color.white)
         })
         .padding()
