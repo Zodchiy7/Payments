@@ -17,9 +17,11 @@ struct AlertView: View {
         }, label: {
             Text("Ok")
                 .foregroundColor(Color.white)
+                .frame(width: 100)
         })
         .padding()
         .background(Color.blue)
+        .cornerRadius(15.0)
         .alert(isPresented: $isAlert, content: {
             Alert(title: Text("Recive Data"),
                   message: Text(" Error \(userViewModel.paymentsError!.localizedDescription)"),

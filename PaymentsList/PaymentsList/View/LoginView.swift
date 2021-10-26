@@ -23,7 +23,7 @@ struct LoginView: View {
           }
           Section {
             Button(action: { userViewModel.login(showList: showList) }) {
-              Text("Login")
+              Text("LOGIN")
                 frame(alignment: .center)
             }.disabled(!self.userViewModel.isValid)
           }
