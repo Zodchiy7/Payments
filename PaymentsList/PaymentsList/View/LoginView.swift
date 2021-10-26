@@ -22,7 +22,7 @@ struct LoginView: View {
             SecureField("Password", text: $userViewModel.password)
           }
           Section {
-            Button(action: { userViewModel.login(showList: showList()) }) {
+            Button(action: { userViewModel.login(showList: showList) }) {
               Text("Login")
                 frame(alignment: .center)
             }.disabled(!self.userViewModel.isValid)
@@ -33,8 +33,8 @@ struct LoginView: View {
         }
     }
     
-    func showList() {
-        self.flagShowList = true
+    func showList(_ show: Bool) {
+        self.flagShowList = show
     }
     
 }

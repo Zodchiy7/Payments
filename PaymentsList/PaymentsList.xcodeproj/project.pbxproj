@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		097211062727E5F000B6F33C /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097211052727E5F000B6F33C /* AlertView.swift */; };
 		0984368027217328005BCCB3 /* PaymentsListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984367F27217328005BCCB3 /* PaymentsListApp.swift */; };
 		0984368227217328005BCCB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984368127217328005BCCB3 /* ContentView.swift */; };
 		098436842721732B005BCCB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098436832721732B005BCCB3 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097211052727E5F000B6F33C /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		0984367C27217328005BCCB3 /* PaymentsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0984367F27217328005BCCB3 /* PaymentsListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsListApp.swift; sourceTree = "<group>"; };
 		0984368127217328005BCCB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				098436B8272177B2005BCCB3 /* LoginView.swift */,
 				098436C72721A7C3005BCCB3 /* PaymentsListView.swift */,
+				097211052727E5F000B6F33C /* AlertView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				0984368227217328005BCCB3 /* ContentView.swift in Sources */,
 				098436B1272174B7005BCCB3 /* UserViewModel.swift in Sources */,
+				097211062727E5F000B6F33C /* AlertView.swift in Sources */,
 				098436B9272177B2005BCCB3 /* LoginView.swift in Sources */,
 				098436C82721A7C3005BCCB3 /* PaymentsListView.swift in Sources */,
 				098436C327219D7F005BCCB3 /* StoreAPIError.swift in Sources */,

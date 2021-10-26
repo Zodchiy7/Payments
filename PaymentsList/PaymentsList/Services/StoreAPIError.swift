@@ -11,7 +11,7 @@ enum StoreAPIError: Error, LocalizedError {
     case urlError(URLError)
     case responseError(Int)
     case decodingError(DecodingError)
-    case tokenError
+    case authorizationError
     case genericError
     
     var localizedDescription: String {
@@ -22,8 +22,8 @@ enum StoreAPIError: Error, LocalizedError {
             return error.localizedDescription
         case .responseError(let status):
             return "Bad response code: \(status)"
-        case .tokenError:
-            return "Token error"
+        case .authorizationError:
+            return "User authorization failed"
         case .genericError:
             return "An unknown error has been occured"
         }

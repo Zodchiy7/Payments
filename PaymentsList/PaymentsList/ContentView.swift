@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @EnvironmentObject var userViewModel: UserViewModel
+    
     var body: some View {
         LoginView()
+        
+        if userViewModel.paymentsError != nil {
+            Text("\(userViewModel.paymentsError!.localizedDescription)")
+            AlertView()
+        }
+        
     }
 }
 

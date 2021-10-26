@@ -125,8 +125,8 @@ public class PaymentsStore {
                     switch error {
                     case let urlError as URLError:
                         promise(.failure(.urlError(urlError)))
-                    case let decodingError as DecodingError:
-                        promise(.failure(.decodingError(decodingError)))
+                    case _ as DecodingError:
+                        promise(.failure(.authorizationError))
                     case let apiError as StoreAPIError:
                         promise(.failure(apiError))
                     default:
@@ -139,6 +139,12 @@ public class PaymentsStore {
                 dump($0.response)
             })
             .store(in: &self.subscriptions)
+        }
+    }
+    
+    deinit {
+        for cancell in subscriptions {
+            cancell.cancel()
         }
     }
 }

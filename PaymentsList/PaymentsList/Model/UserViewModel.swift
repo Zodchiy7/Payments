@@ -75,21 +75,24 @@ final class UserViewModel: ObservableObject {
             .store(in: &self.cancellableSet)
     }
 
-    func login(showList: ()) {
+    func login(showList: @escaping (Bool) -> Void) {
         self.paymentAPI.login(username: self.username, password: self.password)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: {[unowned self](completion) in
                 if case let .failure(error) = completion {
                     self.paymentsError = error
+                    showList(false)
+                } else {
+                    self.fetchPayments()
+                    showList(true)
                 }
-                self.fetchPayments()
             }, receiveValue: {[unowned self] in
                 self.token = $0
             })
             .store(in: &self.cancellableSet)
     }
     
-    func loginOld(showList: ()) {
+    func loginOld(showList: @escaping (Bool) -> Void) {
         guard let request = paymentAPI.loginRequest(username: self.username, password: self.password) else {
             return
         }
@@ -111,7 +114,7 @@ final class UserViewModel: ObservableObject {
                     self.token = t
                     self.fetchPayments()
                 }
-                showList
+                showList(true)
             }
             dataTask.resume()
         }
